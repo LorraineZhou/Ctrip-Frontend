@@ -1,0 +1,1127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>携程首页临摹－yjzhou</title>
+    <link href="home.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery.min.js"></script> 
+	<script src="js/home.js"></script>
+</head>
+<body onload="load()">
+
+<div class="cui_hd_cont">
+	<div id="cui_hd" class="cui_hd">
+		<div class="ctriplogo">
+			<a href="http://www.ctrip.com/" title="logo">携程旅行网</a>
+		</div>
+		<div class ="cui_search">
+    		<form>
+    		<input id="myinput" type="text" placeholder="目的地／酒店／景点／关键字" onfocus="input_focus()" onblur="input_onblur()">
+    		<button id="mybutton" type="button"></button>
+    		</form>		
+		</div>
+		<div class="nav-bar"> 
+			<ul class="language" onmouseover="mouseover_global()" onmouseout="mouseout_global()">
+				<li>
+					<a href="">
+						<em class="ico-global"></em>
+						<span>Global Sites</span>
+					</a>
+					<div id="language-wrap" class="language-wrap drowndrop">
+						<ul class="language_list">
+							<li class="first">
+								<a class="language_hk" href="">香港（繁体）</a>
+							</li>
+							<li>
+								<a class="language_hk" href="">Hong Kong(English)</a>
+							</li>
+							<li>
+								<a class="language_en" href="">English</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<ul class="service">
+				<a href="">客服中心</a>
+			</ul>
+			<ul class="service-tel">
+				<a href="">国内：400-830-6666</a>
+			</ul>
+			<ul class="mobile-icon">
+				<li>
+					<a href=""><i></i></a>
+					<div></div>
+				</li>
+				<li>
+					<a href=""></a>
+					<div></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="cui_nav" class="cui_nav_single">
+	<div class="base_nav">
+		<ul id="cui_nav_ul" class="cui_nav cui_content">
+			<li id="cui_c_ph_hp" class="cui_nav_current">
+				<a id="c_ph_hp" class="cui_nav_non" href="www.ctrip.com">首页</a>
+			</li>
+			<li class="divider"></li>
+			<li id="cui_nav_hotel" ">
+				<a id="nav_hotel" class="cui_nav_has" href="hotels.ctrip.com" onmouseover="mouseover_nav_hotel()" onmouseout="mouseout_nav_hotel()">酒店
+				<div class="angle"></div>
+				</a>
+				<div class="cui_subnav_wrap" id="cui_subnav_hotel">
+					<ul class="cui_sub_nav">
+						<li>
+							<a id="" href="hotels.ctrip.com">国内酒店</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a id="" href="hotels.ctrip.com">海外酒店</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a id="" href="hotels.ctrip.com">海外民宿＋短租</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a id="" href="hotels.ctrip.com">团购</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a id="" href="hotels.ctrip.com">特价酒店</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a id="" href="hotels.ctrip.com">酒店＋景点</a>
+						</li>
+						<li class="divider"></li>
+					</ul>
+				</div>
+			</li>
+			<li class="divider"></li>
+			<li id="cui_nav_hotel" ">
+				<a id="nav_hotel" class="cui_nav_has" href="hotels.ctrip.com"onmouseover="mouseover_nav_travel()" onmouseout="mouseout_nav_travel()">旅游
+				<div class="angle"></div>
+				</a>
+								<div class="cui_subnav_wrap" id="cui_subnav_travel">
+					<ul class="cui_sub_nav">
+						<li>
+							<a id="" href="hotels.ctrip.com">旅游首页</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a id="" href="hotels.ctrip.com">周末游</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a id="" href="hotels.ctrip.com">跟团游</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a id="" href="hotels.ctrip.com">自由行</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a id="" href="hotels.ctrip.com">邮轮</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a id="" href="hotels.ctrip.com">酒店＋景点</a>
+						</li>
+						<li class="divider"></li>
+					</ul>
+				</div>
+			</li>
+			<li class="divider"></li>
+			<li id="cui_nav_hotel" ">
+				<a id="nav_hotel" class="cui_nav_has" href="hotels.ctrip.com">机票
+				<div class="angle"></div>
+				</a>
+			</li>
+			<li class="divider"></li>
+			<li id="cui_nav_hotel" ">
+				<a id="nav_hotel" class="cui_nav_has" href="hotels.ctrip.com">火车
+				<div class="angle"></div>
+				</a>
+			</li>
+			<li class="divider"></li>
+			<li id="cui_nav_hotel" ">
+				<a id="nav_hotel" class="cui_nav_has" href="hotels.ctrip.com">汽车票
+				<div class="angle"></div>
+				</a>
+			</li>
+			<li class="divider"></li>
+			<li id="cui_nav_hotel" ">
+				<a id="nav_hotel" class="cui_nav_has" href="hotels.ctrip.com">用车
+				<div class="angle"></div>
+				</a>
+			</li>
+			<li class="divider"></li>
+			<li id="cui_nav_hotel" ">
+				<a id="nav_hotel" class="cui_nav_has" href="hotels.ctrip.com">门票
+				<div class="angle"></div>
+				</a>
+			</li>
+			<li class="divider"></li>
+			<li id="cui_nav_hotel" ">
+				<a id="nav_hotel" class="cui_nav_has" href="hotels.ctrip.com">团购
+				<div class="angle"></div>
+				</a>
+			</li>
+			<li class="divider"></li>
+				<li id="cui_nav_hotel" ">
+				<a id="nav_hotel" class="cui_nav_has" href="hotels.ctrip.com">攻略</a>
+			</li>
+			<li class="divider"></li>
+				<li id="cui_nav_hotel" ">
+				<a id="nav_hotel" class="cui_nav_has" href="hotels.ctrip.com">全球购
+				<div class="angle"></div>
+				</a>
+			</li>
+			<li class="divider"></li>
+				<li id="cui_nav_hotel" ">
+				<a id="nav_hotel" class="cui_nav_has" href="hotels.ctrip.com">礼品卡
+				<div class="angle"></div>
+				</a>
+			</li>
+			<li id="longinDivLi" class="cui_nav_myctrip">
+				<ul>
+					<li class="userlogin">
+						<a href="">登录</a>
+						<span>|</span>
+						<a href="">注册</a>
+					</li>
+					<li class="myctrip">
+						<a href="">我的携程</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<div class="mod cui_subway_internal">
+	<h2 class="line-title">
+		国际旅行直通车
+		<i class="angle-right"></i>
+	</h2>
+	<ul class="line-list">
+		<li>
+			<i class="cui-icon-hotel"></i>
+			<a href="">海外酒店</a>
+		</li>
+		<li>
+			<i class="cui-icon-flight" ></i>
+			<a href="">国际机票</a>
+		</li>
+		<li>
+			<i class="cui-icon-car"></i>
+			<a href="">国际租车</a>
+		</li>
+		<li>
+			<i class="cui-icon-train"></i>
+			<a href="">台湾火车票</a>
+		</li>
+		<li>
+			<i class="cui-icon-hotel"></i>
+			<a href="">海外酒店</a>
+		</li>
+		<li>
+			<i class="cui-icon-flight"></i>
+			<a href="">国际机票</a>
+		</li>
+		<li>
+			<i class="cui-icon-car"></i>
+			<a href="">国际租车</a>
+		</li>
+		<li>
+			<i class="cui-icon-train"></i>
+			<a href="">台湾火车票</a>
+		</li>
+	</ul>
+</div>
+<!--header end-->
+
+<!--body start-->
+<div class="mod-banner">
+	<div class="pic_banner market-banner-wrap">
+		<ul class="slide-banner">
+			<li class="slide-banner-cont" id="slide1">
+				<a href="">
+					<img src="http://dimg04.c-ctrip.com/images/700p080000003avzg9EE0_1920_340_17.jpg" class="slide-pic" width="1920" height="340">
+				</a>
+			</li>
+			<li class="slide-banner-cont" id="slide2">
+				<a href="">
+					<img src="http://dimg04.c-ctrip.com/images/700m090000003yxs596B0_1920_340_17.jpg" class="slide-pic" width="1920" height="340">
+				</a>
+			</li>
+			<li class="slide-banner-cont" id="slide3">
+				<a href="">
+					<img src="http://dimg04.c-ctrip.com/images/700r090000003yxsw2DE4_1920_340_17.jpg" class="slide-pic" width="1920" height="340">
+				</a>
+			</li>
+			<li class="slide-banner-cont" id="slide4">
+				<a href="">
+					<img src="http://dimg04.c-ctrip.com/images/700a090000003v6144C48_1920_340_17.jpg" class="slide-pic" width="1920" height="340">
+				</a>
+			</li>
+			<li class="slide-banner-cont" id="slide5">
+				<a href="">
+					<img src="http://dimg04.c-ctrip.com/images/700a090000003uajnB40A_1920_340_17.jpg" class="slide-pic" width="1920" height="340">
+				</a>
+			</li>
+			<li class="slide-banner-cont" id="slide6">
+				<a href="">
+					<img src="http://dimg04.c-ctrip.com/images/7004080000003iqhh0A18_1920_340_17.jpg" class="slide-pic" width="1920" height="340">
+				</a>
+			</li>
+		</ul>
+		<div class="dot-wrap">
+			<ul class="dot-group">
+				<li href="javascript:void(0);" class="dot dot_current" id="" value="0" onmouseover="slide_click(this)"></li>
+				<li href="javascript:void(0);" class="dot" id=""  value="1" onmouseover="slide_click(this)"></li>
+				<li href="javascript:void(0);" class="dot" id=""  value="2" onmouseover="slide_click(this)"></li>
+				<li href="javascript:void(0);" class="dot" id=""  value="3" onmouseover="slide_click(this)"></li>
+				<li href="javascript:void(0);" class="dot" id=""  value="4" onmouseover="slide_click(this)"></li>
+				<li href="javascript:void(0);" class="dot" id=""  value="5" onmouseover="slide_click(this)"></li>	
+		</ul>
+	</div>
+ </div>
+
+<div class="mod mod-search">
+	<div id="searchBox" class="searchBox">
+		<ul id="searchBoxUl" class="s_tab"><li id="searchBox_tab" class="s_tab_current" data-index="0" onmouseover="mouseover_search_tab(this)" onmouseout="mouseout_search_tab(this)" onclick="onclick_search_left(this)">酒店</li><li id="searchBox_tab1" class="s_tab_nocurrent" data-index="1" onmouseover="mouseover_search_tab(this)" onmouseout="mouseout_search_tab(this)" onclick="onclick_search_left(this)">机票</li><li id="searchBox_tab2" class="s_tab_nocurrent" data-index="1" onmouseover="mouseover_search_tab(this)" onmouseout="mouseout_search_tab(this)" onclick="onclick_search_left(this)">自由行</li><li id="searchBox_tab3" class="s_tab_nocurrent" data-index="1" onmouseover="mouseover_search_tab(this)" onmouseout="mouseout_search_tab(this)" onclick="onclick_search_left(this)">旅游</li><li id="searchBox_tab4" class="s_tab_nocurrent" data-index="1" onmouseover="mouseover_search_tab(this)" onmouseout="mouseout_search_tab(this)" onclick="onclick_search_left(this)">火车</li><li id="searchBox_tab5" class="s_tab_nocurrent" data-index="1" onmouseover="mouseover_search_tab(this)" onmouseout="mouseout_search_tab(this)" onclick="onclick_search_left(this)">租车</li><li id="searchBox_tab6" class="s_tab_nocurrent" data-index="1" onmouseover="mouseover_search_tab(this)" onmouseout="mouseout_search_tab(this)" onclick="onclick_search_left(this)">门票</li></ul>
+		<div class="s_content" >
+			<p class="s_subtab_a" id="hotelSwitch"><a href="javascript:void(0);"  class="current" data-index="0" onclick="searchBox_select(this)" onmouseover="mouseover_search(this)" onmouseout="mouseout_search(this)" id="chinaHotel">国内酒店</a><a href="javascript:void(0);"  data-index="1" onclick="searchBox_select(this)" onmouseover="mouseover_search(this)" onmouseout="mouseout_search(this)" id="interHotel">海外酒店</a><a href="javascript:void(0);" data-index="1" onclick="searchBox_select(this)" onmouseover="mouseover_search(this)" onmouseout="mouseout_search(this)">酒店团购</a><a href="javascript:void(0);" data-index="1" onclick="searchBox_select(this)" onmouseover="mouseover_search(this)" onmouseout="mouseout_search(this)">酒店＋景点</a><a href="javascript:void(0);" data-index="1" onclick="searchBox_select(this)" onmouseover="mouseover_search(this)" onmouseout="mouseout_search(this)">会场＋团队房</a></p>
+			<!--国内酒店-->
+			<form id="chinaHotelForm">
+				<div class="s_item_cont">
+					<div class="s_item w100">目的地
+						<input type="text" value="中文／拼音" class="w01" >
+					</div>
+				</div>
+				<div class="s_item_cont">
+					<div class="s_item w201">入住时间
+						<input type="text" value="yyyy-mm-dd" class="w02" id="checkin_date">
+					</div>
+					<div class="s_item2 w202">退房日期
+						<input type="text" value="yyyy-mm-dd" class="w03" id="checkout_date">
+					</div>
+				</div>
+				<div class="s_item_cont">
+					<div class="s_item w100">酒店级别
+						<select>
+							<option selected="selected" value="0">不限</option>
+							<option value="5">五星级／豪华</option>
+							<option value="4">四星级／高档</option>
+							<option value="3">三星级／舒适</option>
+							<option value="2">二星级／经济</option>
+						</select>
+					</div>
+				</div>
+				<div class="s_item_cont">
+					<div class="s_item w100">关键字
+						<input type="text" value="（选填）酒店名/地标/商圈" class="w01">
+					</div>
+				</div>
+			</form>
+	    <!--国内酒店-->  
+			<form id="interHotelForm">
+				<div class="s_item_cont">
+					<div class="s_item w100">目的地
+						<input type="text" value="中文／拼音" class="w01" >
+					</div>
+				</div>
+				<div class="s_item_cont">
+					<div class="s_item w201">入住时间
+						<input type="text" value="yyyy-mm-dd" class="w02" id="checkin_date">
+					</div>
+					<div class="s_item2 w202">退房日期
+						<input type="text" value="yyyy-mm-dd" class="w03" id="checkout_date">
+					</div>
+				</div>
+				<div class="s_item_cont">
+					<div class="s_item w100">每间住客数
+						<select>
+							<option selected="selected" value="1">1成人</option>
+							<option value="2">2成人</option>
+							<option value="3">3成人</option>
+							<option value="4">4成人</option>
+							<option value="5">5成人</option>
+						</select>
+						<select>
+							<option selected="selected" value="0">0儿童</option>
+							<option value="1">1儿童</option>
+							<option value="2">2儿童</option>
+							<option value="3">3儿童</option>
+							<option value="4">4儿童</option>
+						</select>
+					</div>
+
+				</div>
+				<div class="s_item_cont">
+					<div class="s_item w100">关键字
+						<input type="text" value="（选填）酒店名/地标/商圈" class="w01">
+					</div>
+				</div>
+			</form>
+			<div class="s_button_area">
+				<input type="button" value="搜索" class="s_btn" onclick="">
+			</div>
+		</div>
+	</div>
+	<!--酒店搜索-->
+	
+    </div>
+</div>
+
+<div id="container">
+<!--度假 start-->
+	
+	<div id="tmh" class="mod tmh">
+		<div class="mod-hd"><!--度假导航栏-->
+			<h2 class="title">
+				<span class="current">特卖会</span>
+				<span >出境游</span>	
+				<span >国内游</span>	
+				<span >周边游</span>	
+				<span >邮轮</span>
+				<span >门票</span>
+				<span >顶级游</span>						
+			</h2>
+		</div>
+		<div class="mod-bd"><!--度假内容-->
+			<div class="mod-bd-pannel mod-bd-pannel_tmh">
+				<div class="product">
+					<div class="product-hd">
+					<ul class="inner-tabs-nav" id="inner-tabs-nav"><li class="active" data-index="0" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">精选</a></li><li data-index="1" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">跟团游</a></li><li data-index="1" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">自由行</a></li><li data-index="1" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">当地游</a></li><li data-index="1" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">邮轮游</a></li></ul>
+					</div>
+					<div class="product-bd">
+						<div class="inner-tab-pannel active">
+							
+							<div class="product-item" title="柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖">
+									<a href="">
+										<div class="item-thumbnail">
+											<img src="http://dimg04.c-ctrip.com/images/vacations/images2/50/599/599_25_C_500_280.jpg" alt="柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖">
+											<span class="tag tag_tmh">特卖</span>
+											<p class="item-overlay" title="3日券门票，尽游大小吴哥，饱览吴哥古迹，2天自由活动">3日券门票，尽游大小吴哥，饱览吴哥古迹，2天自由活动</p>
+										</div>
+										<p class="item-name">柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖</p>
+										<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												2599
+												<span class="price_info">起</span>
+											</span>
+											<span class="item-type">席位充足</span>
+										</p>
+									</a>
+							</div>
+							
+							<div class="product-item" title="柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖">
+									<a href="">
+										<div class="item-thumbnail">
+											<img src="http://dimg04.c-ctrip.com/images/vacations/images2/50/599/599_25_C_500_280.jpg" alt="柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖">
+											<span class="tag tag_tmh">特卖</span>
+											<p class="item-overlay" title="3日券门票，尽游大小吴哥，饱览吴哥古迹，2天自由活动">3日券门票，尽游大小吴哥，饱览吴哥古迹，2天自由活动</p>
+										</div>
+										<p class="item-name">柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖</p>
+										<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												2599
+												<span class="price_info">起</span>
+											</span>
+											<span class="item-type">席位充足</span>
+										</p>
+									</a>
+							</div>
+
+							<div class="product-item" title="柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖">
+									<a href="">
+										<div class="item-thumbnail">
+											<img src="http://dimg04.c-ctrip.com/images/vacations/images2/50/599/599_25_C_500_280.jpg" alt="柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖">
+											<span class="tag tag_tmh">特卖</span>
+											<p class="item-overlay" title="3日券门票，尽游大小吴哥，饱览吴哥古迹，2天自由活动">3日券门票，尽游大小吴哥，饱览吴哥古迹，2天自由活动</p>
+										</div>
+										<p class="item-name">柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖</p>
+										<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												2599
+												<span class="price_info">起</span>
+											</span>
+											<span class="item-type">席位充足</span>
+										</p>
+									</a>
+							</div>
+
+							<div class="product-item" title="柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖">
+									<a href="">
+										<div class="item-thumbnail">
+											<img src="http://dimg04.c-ctrip.com/images/vacations/images2/50/599/599_25_C_500_280.jpg" alt="柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖">
+											<span class="tag tag_tmh">特卖</span>
+											<p class="item-overlay" title="3日券门票，尽游大小吴哥，饱览吴哥古迹，2天自由活动">3日券门票，尽游大小吴哥，饱览吴哥古迹，2天自由活动</p>
+										</div>
+										<p class="item-name">柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖</p>
+										<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												2599
+												<span class="price_info">起</span>
+											</span>
+											<span class="item-type">席位充足</span>
+										</p>
+									</a>
+							</div>
+
+							<div class="product-item" title="柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖">
+									<a href="">
+										<div class="item-thumbnail">
+											<img src="http://dimg04.c-ctrip.com/images/vacations/images2/50/599/599_25_C_500_280.jpg" alt="柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖">
+											<span class="tag tag_tmh">特卖</span>
+											<p class="item-overlay" title="3日券门票，尽游大小吴哥，饱览吴哥古迹，2天自由活动">3日券门票，尽游大小吴哥，饱览吴哥古迹，2天自由活动</p>
+										</div>
+										<p class="item-name">柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖</p>
+										<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												2599
+												<span class="price_info">起</span>
+											</span>
+											<span class="item-type">席位充足</span>
+										</p>
+									</a>
+							</div>
+
+							<div class="product-item" title="柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖">
+									<a href="">
+										<div class="item-thumbnail">
+											<img src="http://dimg04.c-ctrip.com/images/vacations/images2/50/599/599_25_C_500_280.jpg" alt="柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖">
+											<span class="tag tag_tmh">特卖</span>
+											<p class="item-overlay" title="3日券门票，尽游大小吴哥，饱览吴哥古迹，2天自由活动">3日券门票，尽游大小吴哥，饱览吴哥古迹，2天自由活动</p>
+										</div>
+										<p class="item-name">柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖</p>
+										<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												2599
+												<span class="price_info">起</span>
+											</span>
+											<span class="item-type">席位充足</span>
+										</p>
+									</a>
+							</div>
+
+							<div class="product-item" title="柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖">
+									<a href="">
+										<div class="item-thumbnail">
+											<img src="http://dimg04.c-ctrip.com/images/vacations/images2/50/599/599_25_C_500_280.jpg" alt="柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖">
+											<span class="tag tag_tmh">特卖</span>
+											<p class="item-overlay" title="3日券门票，尽游大小吴哥，饱览吴哥古迹，2天自由活动">3日券门票，尽游大小吴哥，饱览吴哥古迹，2天自由活动</p>
+										</div>
+										<p class="item-name">柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖</p>
+										<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												2599
+												<span class="price_info">起</span>
+											</span>
+											<span class="item-type">席位充足</span>
+										</p>
+									</a>
+							</div>
+
+							<div class="product-item" title="柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖">
+									<a href="">
+										<div class="item-thumbnail">
+											<img src="http://dimg04.c-ctrip.com/images/vacations/images2/50/599/599_25_C_500_280.jpg" alt="柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖">
+											<span class="tag tag_tmh">特卖</span>
+											<p class="item-overlay" title="3日券门票，尽游大小吴哥，饱览吴哥古迹，2天自由活动">3日券门票，尽游大小吴哥，饱览吴哥古迹，2天自由活动</p>
+										</div>
+										<p class="item-name">柬埔寨暹粒吴哥窟6日跟团游(4钻)·吴哥3日券+包机直飞+2日free+特卖</p>
+										<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												2599
+												<span class="price_info">起</span>
+											</span>
+											<span class="item-type">席位充足</span>
+										</p>
+									</a>
+							</div>
+
+							<div class="extra-item" title="你不可不看的旅游频道">
+								<a href="" target="_blank">
+									<p class="extra-thumbnail">
+										<img src="http://images3.c-ctrip.com/dj/201504/zy/tmh0427_4_220x330.png" alt="你不可不看的旅游特价频道！">
+									</p>
+									<p class="item-overlay">你不可不看的旅游频道</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+	    </div>		
+	</div>
+	<div id="hwjd" class="mod hwjd">
+		<div class="mod-hd"><!--度假导航栏-->
+			<h2 class="title">
+				<span class="current">海外酒店</span>
+				<span >国内酒店</span>	
+				<span >酒店＋景点</span>	
+				<span >客栈民宿</span>	
+				<span >团购</span>
+			</h2>
+		</div>
+		<div class="mod-bd">
+				<div class="entrance">
+
+				</div>
+				<div class="product">	
+					<div class="product-hd">
+						<ul class="inner-tabs-nav" id="inner-tabs-nav"><li class="active" data-index="0" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">热门城市</a></li><li data-index="1" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">都市购物</a></li><li data-index="1" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">海岛休闲</a></li><li data-index="1" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">旅游胜地</a></li></ul>
+					</div>
+					<div class="product-bd">
+						<div class="inner-tab-pannel active">
+ 							<div class="product-item product-item-complex">
+								<a href="">
+									<div class="item-thumbnail">
+										<img src="http://images3.c-ctrip.com/overseas/city/singapore73-3.jpg" alt="新加坡">
+									</div>
+									<div class="item-msg">
+										<p class="item-name">新加坡</p> 
+										<p class="item-num">485家酒店</p>
+										<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												70
+												<span class="price_info">起</span>
+											</span>
+										</p>
+									</div>
+								</a> 								
+ 							</div>
+ 							 <div class="product-item product-item-complex">
+								<a href="">
+									<div class="item-thumbnail">
+										<img src="http://images3.c-ctrip.com/overseas/city/singapore73-3.jpg" alt="新加坡">
+									</div>
+									<div class="item-msg">
+										<p class="item-name">新加坡</p> 
+										<p class="item-num">485家酒店</p>
+										<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												70
+												<span class="price_info">起</span>
+											</span>
+										</p>
+									</div>
+								</a> 								
+ 							</div>
+ 							 <div class="product-item product-item-complex">
+								<a href="">
+									<div class="item-thumbnail">
+										<img src="http://images3.c-ctrip.com/overseas/city/singapore73-3.jpg" alt="新加坡">
+									</div>
+									<div class="item-msg">
+										<p class="item-name">新加坡</p> 
+										<p class="item-num">485家酒店</p>
+										<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												70
+												<span class="price_info">起</span>
+											</span>
+										</p>
+									</div>
+								</a> 								
+ 							</div>
+ 							 <div class="product-item product-item-complex">
+								<a href="">
+									<div class="item-thumbnail">
+										<img src="http://images3.c-ctrip.com/overseas/city/singapore73-3.jpg" alt="新加坡">
+									</div>
+									<div class="item-msg">
+										<p class="item-name">新加坡</p> 
+										<p class="item-num">485家酒店</p>
+										<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												70
+												<span class="price_info">起</span>
+											</span>
+										</p>
+									</div>
+								</a> 								
+ 							</div>
+ 							 <div class="product-item product-item-complex">
+								<a href="">
+									<div class="item-thumbnail">
+										<img src="http://images3.c-ctrip.com/overseas/city/singapore73-3.jpg" alt="新加坡">
+									</div>
+									<div class="item-msg">
+										<p class="item-name">新加坡</p> 
+										<p class="item-num">485家酒店</p>
+										<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												70
+												<span class="price_info">起</span>
+											</span>
+										</p>
+									</div>
+								</a> 								
+ 							</div>
+ 							 <div class="product-item product-item-complex">
+								<a href="">
+									<div class="item-thumbnail">
+										<img src="http://images3.c-ctrip.com/overseas/city/singapore73-3.jpg" alt="新加坡">
+									</div>
+									<div class="item-msg">
+										<p class="item-name">新加坡</p> 
+										<p class="item-num">485家酒店</p>
+										<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												70
+												<span class="price_info">起</span>
+											</span>
+										</p>
+									</div>
+								</a> 								
+ 							</div>
+ 							<div class="extra-item" title="你不可不看的旅游频道">
+								<a href="" target="_blank">
+									<p class="extra-thumbnail">
+										<img src="http://images3.c-ctrip.com/rk/201511/jb220x330.jpg" alt="海外酒店 惊爆底价">
+									</p>
+									<p class="item-overlay">海外酒店 惊爆底价</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	    </div>
+
+	<div id="airticket" class="mod airticket">
+		<div class="mod-hd"><!--度假导航栏-->
+			<h2 class="title">
+				<span class="current">国际特价机票</span>
+				<span >国内特价机票</span>					
+			</h2>
+		</div>
+		<div class="mod-bd"><!--度假内容-->
+			<div class="mod-bd-pannel mod-bd-pannel_tmh">
+				<div class="product">
+					<div class="product-hd">
+					<ul class="inner-tabs-nav" id="inner-tabs-nav"><li class="active" data-index="0" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">热门往返</a></li><li data-index="1" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">亚洲</a></li><li data-index="1" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">欧洲</a></li></ul>
+					</div>
+					<div class="product-bd">
+						<div class="inner-tab-pannel active">
+							<div class="product-item">
+								<a href="#">
+									<p class="item-name">北京<i class="icon-round"></i>纽约</p>
+									<p class="item-info"><span class="date">11月05日－11月12日</span></p>
+									<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												11
+												<span class="price_info">起</span>
+											</span>
+											<span class="button-yellow">立抢</span>
+									</p>
+								</a>
+							</div>
+							<div class="product-item">
+								<a href="#">
+									<p class="item-name">北京<i class="icon-round"></i>纽约</p>
+									<p class="item-info"><span class="date">11月05日－11月12日</span></p>
+									<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												11
+												<span class="price_info">起</span>
+											</span>
+											<span class="button-yellow">立抢</span>
+									</p>
+								</a>
+							</div>
+							<div class="product-item">
+								<a href="#">
+									<p class="item-name">北京<i class="icon-round"></i>纽约</p>
+									<p class="item-info"><span class="date">11月05日－11月12日</span></p>
+									<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												11
+												<span class="price_info">起</span>
+											</span>
+											<span class="button-yellow">立抢</span>
+									</p>
+								</a>
+							</div>
+							<div class="product-item">
+								<a href="#">
+									<p class="item-name">北京<i class="icon-round"></i>纽约</p>
+									<p class="item-info"><span class="date">11月05日－11月12日</span></p>
+									<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												11
+												<span class="price_info">起</span>
+											</span>
+											<span class="button-yellow">立抢</span>
+									</p>
+								</a>
+							</div>
+							<div class="product-item">
+								<a href="#">
+									<p class="item-name">北京<i class="icon-round"></i>纽约</p>
+									<p class="item-info"><span class="date">11月05日－11月12日</span></p>
+									<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												11
+												<span class="price_info">起</span>
+											</span>
+											<span class="button-yellow">立抢</span>
+									</p>
+								</a>
+							</div>
+							<div class="product-item">
+								<a href="#">
+									<p class="item-name">北京<i class="icon-round"></i>纽约</p>
+									<p class="item-info"><span class="date">11月05日－11月12日</span></p>
+									<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												11
+												<span class="price_info">起</span>
+											</span>
+											<span class="button-yellow">立抢</span>
+									</p>
+								</a>
+							</div>
+							<div class="product-item">
+								<a href="#">
+									<p class="item-name">北京<i class="icon-round"></i>纽约</p>
+									<p class="item-info"><span class="date">11月05日－11月12日</span></p>
+									<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												11
+												<span class="price_info">起</span>
+											</span>
+											<span class="button-yellow">立抢</span>
+									</p>
+								</a>
+							</div>
+							<div class="product-item">
+								<a href="#">
+									<p class="item-name">北京<i class="icon-round"></i>纽约</p>
+									<p class="item-info"><span class="date">11月05日－11月12日</span></p>
+									<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												11
+												<span class="price_info">起</span>
+											</span>
+											<span class="button-yellow">立抢</span>
+									</p>
+								</a>
+							</div>
+							<div class="product-item">
+								<a href="#">
+									<p class="item-name">北京<i class="icon-round"></i>纽约</p>
+									<p class="item-info"><span class="date">11月05日－11月12日</span></p>
+									<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												11
+												<span class="price_info">起</span>
+											</span>
+											<span class="button-yellow">立抢</span>
+									</p>
+								</a>
+							</div>
+							<div class="product-item">
+								<a href="#">
+									<p class="item-name">北京<i class="icon-round"></i>纽约</p>
+									<p class="item-info"><span class="date">11月05日－11月12日</span></p>
+									<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												11
+												<span class="price_info">起</span>
+											</span>
+											<span class="button-yellow">立抢</span>
+									</p>
+								</a>
+							</div>
+							<div class="product-item">
+								<a href="#">
+									<p class="item-name">北京<i class="icon-round"></i>纽约</p>
+									<p class="item-info"><span class="date">11月05日－11月12日</span></p>
+									<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												11
+												<span class="price_info">起</span>
+											</span>
+											<span class="button-yellow">立抢</span>
+									</p>
+								</a>
+							</div>
+							<div class="product-item">
+								<a href="#">
+									<p class="item-name">北京<i class="icon-round"></i>纽约</p>
+									<p class="item-info"><span class="date">11月05日－11月12日</span></p>
+									<p class="item-info">
+											<span class="item-price">
+												<dfn>¥</dfn>
+												11
+												<span class="price_info">起</span>
+											</span>
+											<span class="button-yellow">立抢</span>
+									</p>
+								</a>
+							</div>
+							<div class="extra-item" title="你不可不看的旅游频道">
+								<a href="" target="_blank">
+									<p class="extra-thumbnail">
+										<img src="http://images3.c-ctrip.com/rk/201506/zmcx220x360.jpg">
+									</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+	    </div>		
+	</div>
+	<div id="globalbuy" class="mod globalbuy">
+		<div class="mod-hd"><!--度假导航栏-->
+			<h2 class="title">
+				<span class="current">全球购</span>			
+			</h2>
+		</div>
+		<div class="mod-bd"><!--度假内容-->
+			<div class="mod-bd-pannel mod-bd-pannel_tmh">
+				<div class="entrance">
+					<dl class="keyword-short">
+						<dt>热门目的地</dt>
+						<dd>
+							<span class="entrance-item"><a href="">香港</a></span>
+							<span class="entrance-item"><a href="">韩国</a></span>
+							<span class="entrance-item"><a href="">法国</a></span>
+							<span class="entrance-item"><a href="">日本</a></span>
+							<span class="entrance-item"><a href="">美国</a></span>
+							<span class="entrance-item"><a href="">泰国</a></span>
+							<span class="entrance-item"><a href="">新加坡</a></span>
+							<span class="entrance-item"><a href="">英国</a></span>
+							<span class="entrance-item"><a href="">西班牙</a></span>
+							<span class="entrance-item"><a href="">意大利</a></span>
+
+						</dd>
+					</dl>
+				</div>
+				<div class="product">
+					<div class="product-hd">
+					<ul class="inner-tabs-nav" id="inner-tabs-nav"><li class="active" data-index="0" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">热门商户</a></li><li data-index="1" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">精品百货</a></li><li data-index="1" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">奢侈大牌</a></li></ul>
+					</div>
+					<div class="product-bd">
+						<div class="product-item">
+								<a href="">
+									<p class="item-img"><img src="http://dimg01.c-ctrip.com/images/tg/219/454/314/24e9dffb9e4d486f81ef8b884d08b7b1_C_570_285.jpg"></p>
+									<p class="item-name">新罗免税店（首尔店）The Shilla Duty Free Seoul</p>
+									<p class="item-info">
+										<span class="item-label">
+											<span class="tag-red-empty">赠品</span>
+										</span>
+										<span class="item-type">韩国 • 首尔</span>
+									</p>
+								</a>
+						</div>
+						<div class="product-item">
+								<a href="">
+									<p class="item-img"><img src="http://dimg01.c-ctrip.com/images/tg/219/454/314/24e9dffb9e4d486f81ef8b884d08b7b1_C_570_285.jpg"></p>
+									<p class="item-name">新罗免税店（首尔店）The Shilla Duty Free Seoul</p>
+									<p class="item-info">
+										<span class="item-label">
+											<span class="tag-red-empty">赠品</span>
+										</span>
+										<span class="item-type">韩国 • 首尔</span>
+									</p>
+								</a>
+						</div>
+						<div class="product-item">
+								<a href="">
+									<p class="item-img"><img src="http://dimg01.c-ctrip.com/images/tg/219/454/314/24e9dffb9e4d486f81ef8b884d08b7b1_C_570_285.jpg"></p>
+									<p class="item-name">新罗免税店（首尔店）The Shilla Duty Free Seoul</p>
+									<p class="item-info">
+										<span class="item-label">
+											<span class="tag-red-empty">赠品</span>
+										</span>
+										<span class="item-type">韩国 • 首尔</span>
+									</p>
+								</a>
+						</div>
+						<div class="product-item">
+								<a href="">
+									<p class="item-img"><img src="http://dimg01.c-ctrip.com/images/tg/219/454/314/24e9dffb9e4d486f81ef8b884d08b7b1_C_570_285.jpg"></p>
+									<p class="item-name">新罗免税店（首尔店）The Shilla Duty Free Seoul</p>
+									<p class="item-info">
+										<span class="item-label">
+											<span class="tag-red-empty">赠品</span>
+										</span>
+										<span class="item-type">韩国 • 首尔</span>
+									</p>
+								</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div id="rentcar" class="mod rentcar">
+		<div class="mod-hd"><!--度假导航栏-->
+			<h2 class="title">
+				<span class="current">国际租车</span>	
+				<span class="current">国际接送机</span>
+				<span class="current">国内租车</span>				
+			</h2>
+		</div>
+		<div class="mod-bd"><!--度假内容-->
+			<div class="mod-bd-pannel mod-bd-pannel_tmh">
+				<div class="entrance">
+					<dl class="keyword-short">
+						<dt>热门目的地</dt>
+						<dd>
+							<span class="entrance-item"><a href="">香港</a></span>
+							<span class="entrance-item"><a href="">韩国</a></span>
+							<span class="entrance-item"><a href="">法国</a></span>
+							<span class="entrance-item"><a href="">日本</a></span>
+							<span class="entrance-item"><a href="">美国</a></span>
+							<span class="entrance-item"><a href="">泰国</a></span>
+							<span class="entrance-item"><a href="">新加坡</a></span>
+							<span class="entrance-item"><a href="">英国</a></span>
+							<span class="entrance-item"><a href="">西班牙</a></span>
+							<span class="entrance-item"><a href="">意大利</a></span>
+
+						</dd>
+					</dl>
+				</div>
+				<div class="product">
+					<div class="product-hd">
+					<ul class="inner-tabs-nav" id="inner-tabs-nav"><li class="active" data-index="0" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">小型轿车</a></li><li data-index="1" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">中型轿车</a></li><li data-index="1" onmouseover="mouseover_inner_tabs_nav(this)" onmouseout="mouseout_inner_tabs_nav(this)" onclick="click_inner_tabs_nav(this)"><a href="javascript:void(0);">大型轿车</a></li></ul>
+					</div>
+					<div class="product-bd">
+						<div class="product-item">
+								<a href="">
+									<p class="item-img"><img src="http://pic.c-ctrip.com/car/ctrip/osd/Chevrolet_Aveo.jpg"></p>
+									<p class="item-name">美国洛杉矶</p>
+									<p class="item-info">
+										<span class="item-label">
+											<span class="tag-red-empty">赠品</span>
+										</span>
+										<span class="item-type">自驾梦幻1号公路</span>
+									</p>
+								</a>
+						</div>
+						<div class="product-item">
+								<a href="">
+									<p class="item-img"><img src="http://pic.c-ctrip.com/car/ctrip/osd/Chevrolet_Aveo.jpg"></p>
+									<p class="item-name">美国洛杉矶</p>
+									<p class="item-info">
+										<span class="item-label">
+											<span class="tag-red-empty">赠品</span>
+										</span>
+										<span class="item-type">自驾梦幻1号公路</span>
+									</p>
+								</a>
+						</div>
+						<div class="product-item">
+								<a href="">
+									<p class="item-img"><img src="http://pic.c-ctrip.com/car/ctrip/osd/Chevrolet_Aveo.jpg"></p>
+									<p class="item-name">美国洛杉矶</p>
+									<p class="item-info">
+										<span class="item-label">
+											<span class="tag-red-empty">赠品</span>
+										</span>
+										<span class="item-type">自驾梦幻1号公路</span>
+									</p>
+								</a>
+						</div>
+						<div class="product-item">
+								<a href="">
+									<p class="item-img"><img src="http://pic.c-ctrip.com/car/ctrip/osd/Chevrolet_Aveo.jpg"></p>
+									<p class="item-name">美国洛杉矶</p>
+									<p class="item-info">
+										<span class="item-label">
+											<span class="tag-red-empty">赠品</span>
+										</span>
+										<span class="item-type">自驾梦幻1号公路</span>
+									</p>
+								</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--左侧电梯-->
+<ul class="lift">
+	<li class="lift_outside" onclick="_scroll('#tmh')">
+		<div class="lift-item lift-vacations" ></div>
+		<a class="lift-name">旅游</a>
+	</li>
+	<li class="lift_outside" onclick="_scroll('#hwjd')">
+		<div class="lift-item lift-hotel"></div>
+		<a class="lift-name">酒店</a>
+	</li>
+	<li class="lift_outside" onclick="_scroll('#airticket')">
+		<div class="lift-item lift-flight"></div>
+		<a  class="lift-name">机票</a>
+	</li>
+	<li class="lift_outside" onclick="_scroll('#rentcar')">
+		<div class="lift-item lift-car"></div>
+		<a  class="lift-name">用车</a>
+	</li>
+	<li class="lift_outside" onclick="_scroll('#globalbuy')">
+		<div class="lift-item lift-wanle"></div>
+		<a class="lift-name">玩乐</a>
+	</li>
+	<li class="lift_outside" >
+		<div class="lift-item lift-shopping"></div>
+		<a  class="lift-name">购物</a>
+	</li>
+	<li class="lift_outside">
+		<div class="lift-item lift-gonglue"></div>
+		<a  class="lift-name">攻略</a>
+	</li>
+	<li class="lift_outside">
+		<div class="lift-item lift-service"></div>
+		<a  class="lift-name">服务</a>
+	</li>
+</ul>
+<!--弹出广告-->
+<div class="ad-click" id="ad-click" onclick="ad_click()">
+	<div class="ad-img"></div>
+</div>
+<div class="ad-out" id="ad-out">	
+	<div class="ad-close" onclick="ad_close()">x</div>
+</div>
+
+</body>
+</html>
